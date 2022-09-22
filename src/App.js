@@ -2,12 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./App.css";
-
-import Signup from "./Signup/Signup";
-import Login from "./Login/Login";
-
 import MainPage from "./LandingPage/MainPage";
-
 import ProductPage from "./ProductPage/ProductPage";
 import AccountPage from "./AccountPage/AccountPage";
 import RentalPolicy from "./RentalPolicy/RentalPolicy";
@@ -27,9 +22,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="sign-up" element={<Signup />}></Route>
-        <Route path="log-in" element={<Login />}></Route>
-
         <Route path="/" element={<MainPage />}></Route>
         <Route path="products" element={<ProductPage />}>
           <Route path=":category" element={<ProductList />} />

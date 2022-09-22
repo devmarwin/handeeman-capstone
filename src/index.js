@@ -6,9 +6,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./index.css";
 import "./App.css";
 
-import Signup from "./Signup/Signup";
-import Login from "./Login/Login";
-
 import MainPage from "./LandingPage/MainPage";
 
 import ProductPage from "./ProductPage/ProductPage";
@@ -40,9 +37,6 @@ root.render(
   // </React.StrictMode>
   <BrowserRouter>
     <Routes>
-      <Route path="sign-up" element={<Signup />}></Route>
-      <Route path="log-in" element={<Login />}></Route>
-
       <Route path="/" element={<MainPage />}></Route>
       <Route path="products" element={<ProductPage />}>
         <Route path=":category" element={<ProductList />} />
